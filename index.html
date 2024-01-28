@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala FM Stream</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .radio-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            background-color: #292929;
+        }
+
+        .radio-image {
+            width: 100%;
+            height: auto;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Kerala FM Stream</h1>
+
+    <div class="radio-card" id="akashvaniBalaghat">
+        <h2>Akashvani Balaghat</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_104096.jpg" alt="Akashvani Balaghat">
+        <audio controls crossorigin="anonymous" id="audioPlayer1"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniBetul">
+        <h2>Akashvani Betul</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_434247.jpg" alt="Akashvani Betul">
+        <audio controls crossorigin="anonymous" id="audioPlayer2"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniBhopal">
+        <h2>Akashvani Bhopal</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/bhopal.jpg" alt="Akashvani Bhopal">
+        <audio controls crossorigin="anonymous" id="audioPlayer3"></audio>
+    </div>
+
+    <div class="radio-card" id="vbsBhopal">
+        <h2>VBS Bhopal</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_124534.jpg" alt="VBS Bhopal">
+        <audio controls crossorigin="anonymous" id="audioPlayer4"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniChhatarpur">
+        <h2>Akashvani Chhatarpur</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/airchhatarpur.jpg" alt="Akashvani Chhatarpur">
+        <audio controls crossorigin="anonymous" id="audioPlayer5"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniChhindwara">
+        <h2>Akashvani Chhindwara</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/airchhindwara.jpg" alt="Akashvani Chhindwara">
+        <audio controls crossorigin="anonymous" id="audioPlayer6"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniGuna">
+        <h2>Akashvani Guna</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_741208.jpg" alt="Akashvani Guna">
+        <audio controls crossorigin="anonymous" id="audioPlayer7"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniGwalior">
+        <h2>Akashvani Gwalior</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/airgwalior.jpg" alt="Akashvani Gwalior">
+        <audio controls crossorigin="anonymous" id="audioPlayer8"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniIndore">
+        <h2>Akashvani Indore</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/indore.jpg" alt="Akashvani Indore">
+        <audio controls crossorigin="anonymous" id="audioPlayer9"></audio>
+    </div>
+
+    <div class="radio-card" id="vbsIndore">
+        <h2>VBS Indore</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_624993.jpg" alt="VBS Indore">
+        <audio controls crossorigin="anonymous" id="audioPlayer10"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniJabalpur">
+        <h2>Akashvani Jabalpur</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/jabalpur.jpg" alt="Akashvani Jabalpur">
+        <audio controls crossorigin="anonymous" id="audioPlayer11"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniJabalpurFM">
+        <h2>Akashvani Jabalpur FM</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_339623.jpg" alt="Akashvani Jabalpur FM">
+        <audio controls crossorigin="anonymous" id="audioPlayer12"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniKhandwa">
+        <h2>Akashvani Khandwa</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_818549.jpg" alt="Akashvani Khandwa">
+        <audio controls crossorigin="anonymous" id="audioPlayer13"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniRewa">
+        <h2>Akashvani Rewa</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_671538.jpg" alt="Akashvani Rewa">
+        <audio controls crossorigin="anonymous" id="audioPlayer14"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniSagar">
+        <h2>Akashvani Sagar</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_918593.jpg" alt="Akashvani Sagar">
+        <audio controls crossorigin="anonymous" id="audioPlayer15"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniShahdol">
+        <h2>Akashvani Shahdol</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_567879.jpg" alt="Akashvani Shahdol">
+        <audio controls crossorigin="anonymous" id="audioPlayer16"></audio>
+    </div>
+
+    <div class="radio-card" id="akashvaniShivpuri">
+        <h2>Akashvani Shivpuri</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/RADIO_147769.jpg" alt="Akashvani Shivpuri">
+        <audio controls crossorigin="anonymous" id="audioPlayer17"></audio>
+    </div>
+
+   <div class="radio-card" id="Raagam">
+        <h2>Raagam</h2>
+        <img class="radio-image" src="https://airdco.pc.cdn.bitgravity.com/images/raagam.jpg" alt="Raagam">
+        <audio controls crossorigin="anonymous" id="audioPlayer18"></audio>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            initializeAudio('akashvaniBalaghat', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio091/playlist.m3u8');
+            initializeAudio('akashvaniBetul', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio108/playlist.m3u8');
+            initializeAudio('akashvaniBhopal', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio146/playlist.m3u8');
+            initializeAudio('vbsBhopal', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio248/playlist.m3u8');
+            initializeAudio('akashvaniChhatarpur', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio104/playlist.m3u8');
+            initializeAudio('akashvaniChhindwara', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio113/playlist.m3u8');
+            initializeAudio('akashvaniGuna', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio115/playlist.m3u8');
+            initializeAudio('akashvaniGwalior', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio205/playlist.m3u8');
+            initializeAudio('akashvaniIndore', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio212/playlist.m3u8');
+            initializeAudio('vbsIndore', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio41/playlist.m3u8');
+            initializeAudio('akashvaniJabalpur', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio167/playlist.m3u8');
+            initializeAudio('akashvaniJabalpurFM', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio240/playlist.m3u8');
+            initializeAudio('akashvaniKhandwa', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio143/playlist.m3u8');
+            initializeAudio('akashvaniRewa', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio225/playlist.m3u8');
+            initializeAudio('akashvaniSagar', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio204/playlist.m3u8');
+            initializeAudio('akashvaniShahdol', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio228/playlist.m3u8');
+            initializeAudio('akashvaniShivpuri', 'https://air.pc.cdn.bitgravity.com/air/live/pbaudio171/playlist.m3u8');
+            initializeAudio('Raagam', 'https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudioragam/hlspbaudioragam_Auto.m3u8');
+        });
+
+        function initializeAudio(cardId, sourceUrl) {
+            var audio = document.getElementById(cardId).querySelector('audio');
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(sourceUrl);
+                hls.attachMedia(audio);
+            } else if (audio.canPlayType('application/vnd.apple.mpegurl')) {
+                audio.src = sourceUrl;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
